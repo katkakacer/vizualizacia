@@ -22,9 +22,6 @@ int main() {
 		file << "DATASET POLYDATA\n";
 		file << "POINTS " << n + 1 << " FLOAT\n";
 		
-		//x = r * cos(alfa);
-		//y = r * sin(alfa);
-		//file << x << " " << y << " 0\n";
 		for (size_t i = 0; i < n; i++)
 		{
 			x = r * cos(alfa + i * krok);
@@ -54,13 +51,7 @@ int main() {
 			file << i << " ";
 		}
 		file << "\n";
-		/*file << "5\nsluchadla\ngbl\n10\n80\n";
-		file << "6\nklavesnica\ngenius\n10\n20\n";
-		file << "7\nmys\nbloody\n10\n45\n";
-		file << "8\nhodinky\nxiaomi\n10\n50\n";
-		file << "9\nhodinky\napple\n10\n250\n";
-		file << "10\nmobil\nxiaomi\n10\n200\n";
-		file << "11\nmobil\napple\n10\n350\n";*/
+
 		file.close();
 	}
 	else {
